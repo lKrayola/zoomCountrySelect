@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+  <body>
+    <div>
+      <link rel="stylesheet" href="https://web.goodweb.host/nice-select.css" />
+      <style>
+        .list {
+          max-height: 30vh;
+          overflow: scroll !important;
+        }
+        .nice-select {
+          border-radius: 0px;
+          width: 100%;
+        }
+
+        .nice-select .option {
+          font-family: system-ui;
+        }
+      </style>
+      <select name="#allcountries" id="#allcountries">
+        
+      </select>
+      <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+      <script src="https://web.goodweb.host/jquery.nice-select.js"></script>
+      <script src="https://web.goodweb.host/goodwebhost-country.js"></script>
+      <script>
+        $(document).ready(function () {
+          $("#allcountries").replaceWith(countries);
+          $("select").niceSelect();
+        });
+      </script>
+    </div>
+  </body>
+</html>
